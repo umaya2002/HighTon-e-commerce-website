@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewpoet" content="width-device-width, initial-scale=1.0">
+<title> Cart - HighTon </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,300&family=Roboto+Slab:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+<link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+			  <a href=""><img src="final2.png" width="200px" alt=""></a>
+			</div>
+			<nav>
+			   <ul id="MenuItems"><b>
+				  <li><a href="">Home</a></li>
+				  <li><a href="">Products</a></li>
+				  <li><a href="">About</a></li> 
+				  <li><a href="">Contact</a></li>
+				  <li><a href="">Account</a></li>
+			   </b></ul>
+			</nav>
+			<img src="download.png" width="30px" height="30px">
+			<img src="Menu_icon.png" class="menu-icon"  onclick="menutoggle()">
+		  </div>
+	</div>
+
+<!------cart item detail------>
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>SubTotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-input">
+                    <img src="images/11.jpg" >
+                <div>
+                    <p>Frenchy Knot Crop cami Top</p>
+                    <small>Price: $5.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+                </div>
+
+
+            </td>
+            <td><input type="numbet" value="1"></td>
+            <td>$5.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-input">
+                    <img src="images/22.jpg" >
+                <div>
+                    <p>VCAY solid cable knit skirt</p>
+                    <small>Price: $15.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="numbet" value="1"></td>
+            <td>$15.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-input">
+                    <img src="images/29.jpg" >
+                <div>
+                    <p>Fashion Summer Faux Flat Sandals</p>
+                    <small>Price: $15.50</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="numbet" value="1"></td>
+            <td>$15.50</td>
+        </tr>
+    </table>
+    <div class="total-price">
+
+        <table>
+            <tr>
+               <td>SubTotal</td>
+               <td>$35.50</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$55.00</td>
+             </tr>
+             <tr>
+                <td>Total</td>
+                <td>$90.50</td>
+             </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+</div>
+<!------footer------>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download Our App</h3>
+				<p>Download App For Android and ios mobile Phone.</p>
+				<div class="app-logo">
+					<img src="images/Icons/google play.png">
+					<img src="app-store-badge-og-twitter1.png">
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<img src="suck.png" width="300px">
+				<p>Our Purpose is to Sustainably Make the Pleasure, Benifits of Makeing shopping view</p>
+			</div>
+               <div class="footer-col-3">
+				<h3>Useful Links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog Post</li>
+					<li>Return POlicicy</li>
+					<li>Join Affiliate</li>
+				</ul>
+			   </div>
+			   <div class="footer-col-4">
+				<h3>Follow us</h3>
+				<ul>
+					<li>Facebool</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+					<li>YouTube</li>
+				</ul>
+			   </div>
+		</div>
+		<hr>
+		<p class="Copyright">Copyright 2023 - HighTon</p>
+	</div>
+</div>
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!------js for toggle menu------>
+<script>
+	var MenuItems= document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight="0px"
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight=="0px")
+		{
+			MenuItems.style.maxHeight="20px";
+		}
+		else{
+			MenuItems.style.maxHeight="0px";
+		}
+	}
+</script>
+
+</body>
+
+</html>
